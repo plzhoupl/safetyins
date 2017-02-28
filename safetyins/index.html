@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>安全生产保险网</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollify.min.js"></script>
+    <script>
+        $(function() {
+            $('.panel').css({'height': $(window).height()});
+            $.scrollify({
+                section:'.panel',
+                scrollbars: false
+            });
+        });
+    </script>
+</head>
+
+<body >
+<div class="header-nav header">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/logo.png" alt=""/>
+        </div>
+        <div class="right f18">
+            <ul class="clearfix">
+                <li><a href="index.html" class="hover">首页</a></li>
+                <li><a href="trends.html">动态资讯</a></li>
+                <li><a href="intro.html">项目介绍</a></li>
+                <li><a href="example.html">事故案例</a></li>
+                <li><a href="#" style="color: #656464" id="cl">●●●</a></li>
+            </ul>
+            <ul class="clearfix" id="iconbar" style="display: none;">
+                <li><a href="about.html">公司简介</a></li>
+                <li><a href="range.html">经营范围</a></li>
+                <li><a href="source.html">企业沿革</a></li>
+                <li><a href="company.html">合作公司</a></li>
+                <li><a href="address.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="login-bg1 panel">
+        <h2 class="f46 fb">海南安全生产责任保险<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目变更公告</h2>
+        <p class="f26">江泰保险经纪股份有限公司海口分公司统保的海南省安全生产责任保险</p>
+        <p class="f22">了解其他项目点击下拉按钮</p>
+        <p><a href="#login-bg2"></a></p>
+    <div class="hot-call">请拨打客服热线400-616-8833，询问登录密码。</div>
+    <div class="contact right f16">
+        <h1 class="f20">操作平台</h1>
+        <hr/>
+        <form name="form" method="post">
+            <ul class="clearfix">
+                <li>
+                    <label>用户名：</label>
+                    <input type="text" name="yourName" id="yourName" placeholder=""  required/>
+                </li>
+                <li>
+                    <label>密 &nbsp;&nbsp;&nbsp;码：</label>
+                    <input type="password" name="loginPass" id="loginPass" placeholder="" required/>
+                </li>
+                <li>
+                    <button type="submit" id="login">登&nbsp;录</button>
+                </li>
+                <li>
+                    <a href="" class="left f14 register">忘记密码</a>
+                    <a href="" class="right f14 buttonShow">免费注册</a>
+                </li>
+            </ul>
+        </form>
+        <img src="images/consult.png" alt=""/>
+    </div>
+</div>
+<div class="login-bg2 panel" id="login-bg2">
+    <h2 class="f46 fb">海南安全生产责任保险<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目变更公告</h2>
+    <p class="f26">江泰保险经纪股份有限公司海口分公司统保的海南省安全生产责任保险</p>
+    <div class="hot-call">请拨打客服热线400-616-8833，询问登录密码。</div>
+</div>
+<div class="login-bg3 panel">
+    <h2 class="f46 fb">海南安全生产责任保险<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目变更公告</h2>
+    <p class="f26">江泰保险经纪股份有限公司海口分公司统保的海南省安全生产责任保险</p>
+    <div class="hot-call">请拨打客服热线400-616-8833，询问登录密码。</div>
+</div>
+<!--页脚-->
+<div class="footer-about f14 footer">
+    <div class="container">
+        <ul class="left clearfix">
+            <li style="margin-left: -104px"><p>版权所有copyright©2011-2013 江泰保险经纪股份有限公司.All right reserved</p>
+            </li>
+            <li style="margin-left: -112px"><p>京公网安备11010802010005号 京ICP备06063404号-5 &nbsp;&nbsp;&nbsp;<img src="images/web.png" alt=""/></p></li>
+            <li><p>地址：北京市朝阳区安定门外大街1号江苏广电（信义大厦）8-9层 邮编：100011 &nbsp;&nbsp;&nbsp;站长统计工具</p>
+            </li>
+        </ul>
+        <ul class="left clearfix footer-chat">
+            <li class="left">
+                <img src="images/wechat.jpg" alt=""/>
+                <img src="images/service-hot.png" class="service-hot"/>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--用户注册  -->
+<div class="mask3" id="mask3"></div>
+<div class="mask4" id="mask4"></div>
+<div class="mask1" id="mask1">
+<div class="mask-box f16">
+    <div class="page">
+        <div class="point">
+            <h2>欢迎登录安全生产保险网！请填写真实有效的企业信息，以方便办理业务。安全生产保险网承诺不向第三方提供本注册信息。</h2>
+        </div>
+        <div class="mask-close" id="mask-close1">X</div>
+        <div class="newPage">
+            <div class="progress">
+                <p class="bto">
+                    <span class="active"><b>1</b> 选择注册险种及用户类型</span>
+                    <span><b>2</b> 填写注册企业信息</span>
+                    <span><b>√</b> 注册成功</span>
+                </p>
+                <p class="top">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p style="line-height: 62px">
+        注册的用户类型：
+        <input type="radio"/>企业用户
+        <span style="color: #FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：企业用户适用于有营业执照的机构，包括个体经营者</span>
+    </p>
+    <p style="margin-left: -286px">
+        险种类型：
+        <span>
+            <input type="checkbox" class="input_check" id="check3">
+            <label for="check3"></label>
+            企业用户&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            <input type="checkbox" class="input_check" id="check4">
+            <label for="check4"></label>
+            企业用户
+        </span>
+    </p>
+    <p style="line-height: 62px;margin-left: 40px">所在区域：*省
+    <select type="text" name="s_province2" value="" readonly="readonly" id="s_province2" style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+    市：<select type="text" name="s_city2" value="" readonly="readonly" id="s_city2"
+                        style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+    市：<select type="text" name="s_county2" value="" readonly="readonly" id="s_county2"
+                        style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+    <input type="hidden" name="provinceCode" value="" id="provinceCode2"/>
+    <input type="hidden" name="cityCode" value="" id="cityCode2"/>
+    <input type="hidden" name="countyCode" value="" id="countyCode2"/>
+
+    <span style="color: #FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：所在区域必须输入</span>
+    </p>
+    <p style="line-height: 62px"><input type="checkbox"/>我已认真阅读并同意<a href="#" onclick="hideMask2()">《用户注册协议》</a></p>
+    <a id="pagenext" href="#mask2" onclick="hideMask1()">下一步</a>
+</div>
+</div>
+<div class="mask2" id="mask2">
+    <div class="mask-box1">
+        <div class="page">
+            <div class="point">
+                <h2>欢迎登录安全生产保险网，请填写真实有效的企业信息，以方便办理业务。安全生产保险网承诺不向第三方提供本注册信息。</h2>
+            </div>
+            <div class="mask-close" id="mask-close2">X</div>
+            <div class="progress">
+                <p class="bto">
+                    <span><b>1</b> 选择注册险种及用户类型</span>
+                    <span class="active"><b class="active">2</b> 填写注册企业信息</span>
+                    <span><b>√</b> 注册成功</span>
+                </p>
+
+                <p class="top">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                </p>
+            </div>
+            <div class="content">
+                <form id="regform" method="post" action="" enctype="multipart/form-data">
+                    <input type="hidden" name="orgId" value=""/>
+                    <div class=mcont>
+                        <!-- 分拆补充资料部分 Start -->
+                        <div class=main-cont>
+                            <table class=cont-tab style="table-layout: fixed" cellSpacing=0 cellPadding=0>
+                                <tbody>
+                                <tr>
+                                    <td width="88" class=td1>
+                                        用户名：<span class=nes>*</span>
+                                    </td>
+                                    <td width="457" align="left" valign="middle" class=td2>
+                                        <input type="text" name="loginName" value="" readonly="readonly" id="loginName"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td width="371" class=td3>
+                                        <div class=cont id="loginNameText">
+                                            用户名不需填写，系统自动生成，与营业执照号相同
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=td1>
+                                        密码：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="password" name="newPassword" value="" id="password"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="passwordText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        确认密码：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="password" name="confirmPassword" value="" id="confirmPassword"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="confirmPasswordText"></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class=main-cont-tit>
+                                <!--<div class=arr></div>-->
+                                <h2>用户信息</h2>
+                            </div>
+                            <table class=cont-tab style="table-layout: fixed" cellSpacing=0 cellPadding=0>
+                                <tbody>
+                                <tr>
+                                    <td class=td1>
+                                        投保（企业）名称：：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="travelAgencyName" value="" id="travelAgencyName"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="travelAgencyNameText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        投保（企业）地址：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <select type="text" name="s_province" value="" readonly="readonly"
+                                                id="s_province"
+                                                style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+                                        <select type="text" name="s_city" value="" readonly="readonly" id="s_city"
+                                                style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+                                        <select type="text" name="s_county" value="" readonly="readonly" id="s_county"
+                                                style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+
+                                        <input type="hidden" name="provinceCode" value="" id="provinceCode"/>
+                                        <input type="hidden" name="cityCode" value="" id="cityCode"/>
+                                        <input type="hidden" name="countyCode" value="" id="countyCode"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class=cont id="unitText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1></td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="registeredAddress" value="" id="registeredAddress"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class=cont id="registeredAddressText"></div>
+                                    </td>
+                                </tr>
+                                <tr id="orgNaturetr2">
+                                    <td class=td1>
+                                        投保人组织机构代码：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="organizationCode" value="" id="organizationCode"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="organizationCodeText"></div>
+                                    </td>
+                                </tr>
+                                <tr id="orgNatureLtr2" class="organizationInfoTR">
+                                    <td class=td1>
+                                        上传组织机构代码证：<span class=nes></span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <label>
+                                            <input type="file" name="organizationLicence" value=""
+                                                   id="organizationLicence"
+                                                   style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                        </label>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="organizationCodelicenceText"></div>
+                                    </td>
+                                </tr>
+                                <tr id="orgNaturetr1">
+                                    <td class=td1>
+                                        投保人营业执照号码：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="businessCode" value="" id="businessCode"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="businessCodeText"></div>
+                                    </td>
+                                </tr>
+                                <tr id="orgNatureLtr1" class="businessLicenceTR">
+                                    <td class=td1>
+                                        上传营业执照（复印件加盖章）：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle">
+                                        <label>
+                                            <input type="file" name="businessLicence" value="" id="businessLicence"
+                                                   style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                        </label>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="businessLicenceText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        联系人姓名：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="contactName" value="" id="contactName"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="contactNameText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        联系人电话：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="contactCellPhone" value="" id="contactCellPhone"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="contactCellPhoneText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        联系人邮箱：<span class=nes></span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="contactEmail" value="" id="contactEmail"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class="cont" id="contactEmailText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        联系人地址：<span class=nes>*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <select type="text" name="s_province1" value="" readonly="readonly"
+                                                id="s_province1"
+                                                style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+                                        <select type="text" name="s_city1" value="" readonly="readonly" id="s_city1"
+                                                style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+                                        <select type="text" name="s_county1" value="" readonly="readonly" id="s_county1"
+                                                style="width:72px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"></select>
+
+                                        <input type="hidden" name="provinceCode" value="" id="provinceCode1"/>
+                                        <input type="hidden" name="cityCode" value="" id="cityCode1"/>
+                                        <input type="hidden" name="countyCode" value="" id="countyCode1"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class=cont id="unitText1"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1></td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="contactAddress" value="" id="contactAddress"
+                                               style="width:230px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                    </td>
+                                    <td class=td3>
+                                        <div class=cont id="contactAddressText"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=td1>
+                                        验证码：<span class="nes">*</span>
+                                    </td>
+                                    <td align="left" valign="middle" class=td2>
+                                        <input type="text" name="contactPostCode" value="" id="contactPostCode"
+                                               style="width:130px;height:20px;margin:0px;border:1px #7f9db9 solid;background-color:#ffffff;color: #000;"/>
+                                        <a type="text" name="PostCode" id="yzm"
+                                               style="display:inline;padding:2px 8px;width:90px;height:20px;border:1px #7f9db9 solid;background-color:#ffffff;color: #00A0E9;">2845</a>
+                                    </td>
+                                    <td style="margin-left: -80px">
+                                        <a style="color: #FF6600" onclick="document.getElementById('yzm').innerHTML = yzm();">换一张</a>
+                                        请输入验证码
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class=cont-tab style="table-layout:fixed" cellSpacing=0 cellPadding=0>
+                                <tr align="center">
+                                    <td align="center" valign="middle" class="td2">
+                                        <!-- id 由submitImage 改为 button  visibility:hidden;-->
+                                        <a style="display:inline-block;width:120px;background-color:#FF6600;cursor:pointer;border-radius: 3px;color:#fff;margin-right: 40px"
+                                           id="tij" title="单击提交" onclick="hideMask3()">立即注册</a>&nbsp;
+                                        <a style="display:inline-block;width:120px;background-color:#AAB2BD;cursor:pointer;border-radius: 3px;color:#fff;"
+                                           id="resets" onclick="history.go(-1);return false;">返回</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/all.js"></script>
+<script src="js/form.js"></script>
+<script src="js/area.js"></script>
+<script src="js/formValidator.js"></script>
+<script type="text/javascript">_init_area();</script>
+<script type="text/javascript">_init_area1();</script>
+<script type="text/javascript">_init_area2();</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿/*悬浮CSS*/
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.clearfix:after, .container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.clearfix, .container {
+    display: block;
+    *zoom: 1;
+}
+
+.clear {
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.hidden {
+    overflow: hidden;
+}
+/*悬浮CSS-结束*/
+
+/*定位CSS*/
+.pos-r {
+    position: relative;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.pos-f {
+    position: fixed;
+}
+
+/*定位CSS-结束*/
+
+/*字体CSS*/
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.f26 {
+    font-size: 26px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+.f32{
+    font-size: 32px;
+}
+.f36 {
+    font-size: 36px;
+}
+.f46{
+    font-size: 46px;
+}
+.f50{
+    font-size: 50px;
+}
+.fb {
+    font-weight: bold;
+}
+.fn{
+    font-weight: normal;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-indent {
+    text-indent: 2em; 
+}
+
+/*字体CSS-结束*/
